@@ -17,7 +17,7 @@ function CadastroCategoria() {
     //setValues é a função que mudará o nome
     //useState é o valor inicial
     // on change esta recebendo uma função que esta entendendo o que esta sendo mudado e passando para o useState para que seja alterado na tela
-    
+
     function setValue(key, value) {
         setValues({
             ...values,
@@ -33,18 +33,18 @@ function CadastroCategoria() {
     return(
         <PageDefault>
             <h1>Cadastro de Categoria: {values.nome}</h1>
-            
+
             <form onSubmit = {function handleSubmite(event){
                 event.preventDefault();
                 setCategoria([
                     ...categorias,
                     values
                 ]);
-                
+
                 setValues({valoresIniciais})
             }}>
-                
-                <FormField 
+
+                <FormField
                 label = 'Nome da Categoria'
                 type = 'text'
                 name = 'nome'
@@ -55,8 +55,8 @@ function CadastroCategoria() {
                 <div>
 
                     <label>
-                        Descrição da categoria: 
-                        <textarea 
+                        Descrição da categoria:
+                        <textarea
                         type = 'text'
                         value = {values.descricao}
                         name = 'descricao'
@@ -65,7 +65,7 @@ function CadastroCategoria() {
 
                 </div>
 
-                <FormField 
+                <FormField
                 label = 'Cor'
                 type = 'color'
                 name = 'cor'
@@ -77,7 +77,7 @@ function CadastroCategoria() {
 
                     <label>
                         Descrição da categoria:
-                        <input 
+                        <input
                         type = 'color'
                         value = {values.cor}
                         name = 'cor'
@@ -90,7 +90,7 @@ function CadastroCategoria() {
                     Cadastrar
                 </button>
             </form>
-            
+
             <ul>
                 {categorias.map((categoria, indice) => {
                     return (
