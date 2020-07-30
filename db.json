@@ -1,0 +1,16 @@
+{
+  "categorias": [
+    {
+    "id": 1,
+    "nome": "Front End",
+    "descricao": "Uma Categoria Bacanudassa",
+    "cor": "#cbd1ff"
+    },
+    {
+      "id": 3,
+      "nome": "XD",
+      "descricao": "xDxD",
+      "cor": "#cbd3df"
+      }
+  ]
+}
